@@ -1,4 +1,14 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
+let person = {
+  name: "Damiano",
+  age: 26,
+  doAction: function () {
+    console.log(`${person.name} just smacked a bro!`);
+  },
+};
+
+const smackBtn = document.querySelector(".btn");
+smackBtn.addEventListener("click", person.doAction());
 
 const guesses = document.querySelector(".guesses");
 const lastResult = document.querySelector(".lastResult");
@@ -60,6 +70,8 @@ function resetGame() {
 
   lastResult.style.backgroundColor = "white";
 
+  resetButton.parentNode.removeChild(resetButton);
+
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
@@ -67,7 +79,7 @@ function setGameOver() {
   guessField.disabled = true;
   guessSubmit.disabled = true;
   resetButton = document.createElement("button");
-  resetButton.text = "Start new game";
+  resetButton.textContent = "Start new game";
   document.body.append(resetButton);
   resetButton.addEventListener("click", resetGame);
 }
