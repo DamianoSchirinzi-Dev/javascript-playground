@@ -1,18 +1,27 @@
-const words = ["harder", "super", "amazing!", "exhilirating!", "sadness!"];
-const longWords = words.filter(isLong);
+const list = document.querySelector(".output ");
+const totalBox = document.querySelector(".output p");
+let total = 0;
+list.innerHTML = "";
+totalBox.textContent = "";
 
-const numbers = [6, 2, 12, 53, 1, 3, 7];
-const tripledNumbers = numbers.map(triple);
+// number 1
+("Underpants:6.99");
+("Socks:5.99");
+("T-shirt:14.99");
+("Trousers:31.99");
+("Shoes:23.99");
 
-function isLong(word) {
-  if (word.length > 7) {
-    return word;
-  }
-}
+// number 2
 
-function triple(number) {
-  return number * 3;
-}
+// number 3
 
-console.log(numbers);
-console.log(tripledNumbers);
+// number 4
+
+// number 5
+let itemText = 0;
+
+const listItem = document.createElement("li");
+listItem.textContent = itemText;
+list.appendChild(listItem);
+
+// number 6
