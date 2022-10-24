@@ -4,9 +4,6 @@ const storySection = document.querySelector(".story");
 
 randomizeBtn.addEventListener("click", result);
 
-const baseStory =
-  "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
-
 const names = ["Bob", "Willy the Goblin", "Big Daddy", "Father Christmas"];
 const places = ["the soup kitchen", "Disneyland", "the White House"];
 const events = [
@@ -21,9 +18,9 @@ function randomValueFromArray(array) {
 }
 
 function fToC(fahrenheit) {
-  var fTemp = fahrenheit;
-  var fToCel = ((fTemp - 32) * 5) / 9;
-  var roundedValue = Math.round((fToCel + Number.EPSILON) * 100) / 100;
+  let fTemp = fahrenheit;
+  let fToCel = ((fTemp - 32) * 5) / 9;
+  let roundedValue = Math.round((fToCel + Number.EPSILON) * 100) / 100;
 
   return roundedValue;
 }
