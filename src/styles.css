@@ -1,24 +1,18 @@
-body {
-  font-family: helvetica, sans-serif;
-  width: 800px;
+#days-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-label {
-  font-weight: bold;
-}
-
-div {
-  padding-bottom: 20px;
-}
-
-input[type="text"] {
-  padding: 5px;
-  width: 150px;
-}
-
-p {
-  background: #ffc125;
-  color: #5e2612;
-  padding: 10px;
-  visibility: hidden;
+li {
+  background-color: #609dec; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
 }

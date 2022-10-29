@@ -8,23 +8,27 @@
     <title>Silly story generator</title>
 
     <link rel="stylesheet" href="./src/styles.css" />
-    <script src="./src/story.js" defer></script>
+    <script src="./src/calendar.js" defer></script>
   </head>
 
   <body>
-    <div>
-      <label for="customname">Enter custom name:</label>
-      <input id="customname" type="text" placeholder="" />
-    </div>
-    <div>
-      <label for="us">US</label
-      ><input id="us" type="radio" name="ukus" value="us" checked />
-      <label for="uk">UK</label
-      ><input id="uk" type="radio" name="ukus" value="uk" />
-    </div>
-    <div>
-      <button class="randomize">Generate random story</button>
-    </div>
-    <p class="story">sdasd</p>
+    <label for="theme">Select theme: </label>
+    <select id="dropdown">
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+
+    <h1 id="months-display">Month:</h1>
+    <ul id="days-display"></ul>
   </body>
 </html>
